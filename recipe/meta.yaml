@@ -27,7 +27,7 @@ requirements:
     - scipy
     - cartopy >=0.18
     - esmpy >=7.0
-    - iris >=3
+    - iris >=3,<3.14.1
     - dask
     - cf-units
 
