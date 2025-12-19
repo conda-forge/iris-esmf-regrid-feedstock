@@ -12,9 +12,9 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -34,8 +34,11 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - esmf_regrid
+  commands:
+    - pip check
 
 about:
   home: https://github.com/SciTools/iris-esmf-regrid
