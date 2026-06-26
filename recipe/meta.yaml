@@ -1,6 +1,6 @@
 {% set python_min = "3.12" %}
 {% set name = "iris-esmf-regrid" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/e/esmf-regrid/esmf_regrid-{{ version }}.tar.gz
-  sha256: bc636557b68351d53a92ddef4bd7d9edc98473e16f555562bc519c1bea9e3efa
+  sha256: 2f4bc1e8c523b2da611f94af453b606be2d101ff4d59c5e21ebbd54a4dafd9b0
 
 
 build:
